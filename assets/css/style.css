@@ -1,0 +1,36 @@
+/* I will be using grid hopefully it works with horizontal scrolling */
+article {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr; */
+    
+}
+
+/* ---- HEADER ---- */
+header { 
+    grid-area: header;
+}
+/* ---- HEADER ---- */
+
+
+/* ---- MAIN ---- */
+main {
+    grid-area: main;
+    color:blue;
+}
+/* ---- MAIN ---- */
+
+
+/* ---- FOOTER ---- */
+footer {
+    grid-area: footer;
+}
+/* ---- FOOTER ---- */
