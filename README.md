@@ -30,6 +30,6 @@
 
             - getting gifs of each website will probably require screen capping and using a gif maker
 
-            -also maybe think about using javascript to dynamically load content to page.
+        -also maybe think about using javascript to dynamically load content to page.
 
         
