@@ -17,7 +17,7 @@ article {
     ". header header header ."
     ". leftBtn main rightBtn ."
     ". . footer . .";
-    grid-template-columns: 10% 10% 5fr 10% 10%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 10%;
 }
 
@@ -35,6 +35,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 header > p {
@@ -65,14 +70,18 @@ main {
     height: 75%;
 } */
 .cards {
-    display: flex;
+    color: white;
 }
 .card {
     background-color: #aac43b;
     border-radius: 15px;
     padding: 10px;
-    display: none;
+    width: 700px;
 } 
+
+img {
+    width: 600px;
+}
 /* ---- MAIN ---- */
 
 /* ---- BUTTONS ---- */
@@ -83,7 +92,7 @@ main {
     justify-self: center;
     position: relative;
     color: blue;
-    transition: transform 2s;
+    transition: transform .5s;
 }
 
 #rightBtn {
@@ -92,7 +101,7 @@ main {
     justify-self: center;
     position: relative;
     color: red;
-    transition: transform 2s;
+    transition: transform .5s;
 }
 
 button {
@@ -104,12 +113,12 @@ button {
 }
 
 #leftBtn:hover {
-    transform: rotate(-180deg);
+    transform: rotate(-60deg);
     transform-origin: center center;
 }
 
 #rightBtn:hover {
-    transform: rotate(180deg);
+    transform: rotate(60deg);
     transform-origin: center center;
 }
 /* ---- BUTTONS ---- */
