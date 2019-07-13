@@ -3,6 +3,7 @@ body {
     background-image: url(../imgs/debut_dark.png);
     background-attachment: fixed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
 }
 
 article {
@@ -19,6 +20,8 @@ article {
     ". . footer . .";
     grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 10%;
+    font-family: 'Lato', sans-serif;
+
 }
 
 /* ---- HEADER ---- */
@@ -40,6 +43,12 @@ header {
 
 h1 {
     font-size: 65px;
+    font-family: 'Bungee', cursive;
+}
+h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+    padding: 20px;
 }
 
 header > p {
@@ -75,12 +84,16 @@ main {
 .card {
     background-color: #aac43b;
     border-radius: 15px;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     place-items: center;
     justify-content: center;
     flex-direction: column;
 } 
+
+.card > p {
+    padding: 20px 0px;
+}
 
 img {
     border: 2px #154494 solid;
