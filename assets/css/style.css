@@ -26,7 +26,7 @@ header {
     grid-area: header;
     margin-top: 20px;
     align-self: center;
-    background-color: #986cff;
+    background-color: #ebebeb;
     border-radius: 10px;
     padding: 40px;
     width: 100%;
@@ -39,7 +39,7 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 65px;
 }
 
 header > p {
