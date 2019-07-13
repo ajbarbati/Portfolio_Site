@@ -1,5 +1,4 @@
 /* I will be using grid hopefully it works with horizontal scrolling */
-
 body {
     background-image: url(../imgs/debut_dark.png);
     background-attachment: fixed;
@@ -19,7 +18,7 @@ article {
     ". leftBtn main rightBtn ."
     ". . footer . .";
     grid-template-columns: 10% 10% 5fr 10% 10%;
-    grid-template-rows: 1fr 3fr 10%;
+    grid-template-rows: 1fr 1fr 10%;
 }
 
 /* ---- HEADER ---- */
@@ -31,12 +30,19 @@ header {
     border-radius: 10px;
     padding: 40px;
     width: 100%;
+    height: 100vh;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header > p {
     border: 1.5px #6e6e6e solid;
     border-radius: 10px;
     padding: 40px;
+    line-height: 2;
+    width: 500px;
 }
 /* ---- HEADER ---- */
 
@@ -45,20 +51,28 @@ header > p {
 main {
     grid-area: main;
     place-self: center;
-    position: relative;
     width: 75%;
     height: 75%;
-    background-color:#6cff6c;
-    border-radius: 60px;
-    padding: 40px;
+    padding: 10px;
+    place-items: center;
+    overflow: hidden;
 }
 
-main > p {
+/* main > p {
     border: 1.5px #6e6e6e solid;
     border-radius: 60px;
     padding: 50px;
     height: 75%;
+} */
+.cards {
+    display: flex;
 }
+.card {
+    background-color: #aac43b;
+    border-radius: 15px;
+    padding: 10px;
+    display: none;
+} 
 /* ---- MAIN ---- */
 
 /* ---- BUTTONS ---- */
