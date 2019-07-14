@@ -146,22 +146,42 @@ input {
 
 /* ---- FOOTER ---- */
 footer {
-    /* grid-area: footer; */
-    position: absolute;
-    position: fixed;
+    /* grid-area: footer;*/
+    /* position: absolute;
+    margin: 10px;
+    position: fixed; */ 
     left:0;
-    width: 100px;
+    /* width: 60px; */
     color: #FFDBC7;
+    border: 2px #FFDBC7 solid;
     border-radius: 3px 15px 8px;
+    border-top-style: none;
+    border-left-style: none;
     background-color: #69182B;
     box-shadow:5px 14px 25px 1px #000000;
     transition:width 2s;
 }
 
-footer > p {
-    border: 1.5px #FFDBC7 solid;
-    border-radius: 3px 15px 8px;
-    padding: 20px;
+.footerMenu {
+    /* border-radius: 3px 15px 8px; */
+    padding: 0px;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #FFDBC7
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    background-image: url(../imgs/dots.png) no-repeat left center;
+    
 }
 
 footer:hover {
