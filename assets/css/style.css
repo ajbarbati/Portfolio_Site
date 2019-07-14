@@ -15,11 +15,10 @@ article {
     width: 100%;
     height: auto;
     grid-template-areas: 
-    ". header header header ."
-    ". leftBtn main rightBtn ."
-    ". . footer . .";
+    "header header header header header"
+    "leftBtn main main main rightBtn";
     grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 10%;
+    grid-template-rows: 1fr 1fr;
     font-family: 'Lato', sans-serif;
 
 }
@@ -39,6 +38,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    filter: drop-shadow(12px 10px 10px #1f1618);
 }
 
 h1 {
@@ -88,6 +88,8 @@ main {
     place-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #FFDBC7;
+    filter: drop-shadow(12px 10px 10px #1f1618);
 } 
 
 .card > p {
@@ -105,7 +107,7 @@ img {
 
 #leftBtn {
     grid-area: leftBtn;
-    place-self: center;
+    place-self: center; 
     justify-self: center;
     position: relative;
     transition: transform .5s;
@@ -119,12 +121,10 @@ img {
     transition: transform .5s;
 }
 
-button {
-    background-color: #6cff6c;
+input {
     border-radius: 25%;
-    border: 1.5px #777777 solid;
-    width: 80%;
-    height: auto;
+    height: 700px;
+    width: 40%;
 }
 
 #leftBtn:hover {
@@ -136,21 +136,26 @@ button {
     transform: rotate(60deg);
     transform-origin: center center;
 }
+
+.leftBtn {  
+    place-self: right;
+    justify-self: right;
+}
+
 /* ---- BUTTONS ---- */
 
 /* ---- FOOTER ---- */
 footer {
-    grid-area: footer;
-    width: 100%;
-    margin-bottom: 20px;
-    align-content: baseline;
-    padding: 10px;
+    /* grid-area: footer; */
+    position: absolute;
+    position: fixed;
+    left:0;
+    width: 100px;
+    color: #FFDBC7;
     border-radius: 3px 15px 8px;
     background-color: #69182B;
     box-shadow:5px 14px 25px 1px #000000;
     transition:width 2s;
-    color: #FFDBC7;
-    
 }
 
 footer > p {
