@@ -16,7 +16,7 @@ article {
     height: auto;
     grid-template-areas: 
     "header header header header header"
-    "leftBtn main main main rightBtn";
+    ". leftBtn main rightBtn .";
     grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     font-family: 'Lato', sans-serif;
@@ -122,12 +122,11 @@ img {
 }
 
 input {
-    border-radius: 25%;
-    height: 700px;
-    width: 40%;
+    width: 50%;
+    height: auto;
 }
 
-#leftBtn:hover {
+/* #leftBtn:hover {
     transform: rotate(-60deg);
     transform-origin: center center;
 }
@@ -135,23 +134,16 @@ input {
 #rightBtn:hover {
     transform: rotate(60deg);
     transform-origin: center center;
-}
-
-.leftBtn {  
-    place-self: right;
-    justify-self: right;
-}
+} */
 
 /* ---- BUTTONS ---- */
 
 /* ---- FOOTER ---- */
 footer {
-    /* grid-area: footer;*/
-    /* position: absolute;
+    position: absolute;
     margin: 10px;
-    position: fixed; */ 
-    left:0;
-    /* width: 60px; */
+    position: fixed;
+    left: 0;
     color: #FFDBC7;
     border: 2px #FFDBC7 solid;
     border-radius: 3px 15px 8px;
@@ -167,6 +159,12 @@ footer {
     padding: 0px;
 }
 
+.footerInfo {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+
 li {
     padding: 10px;
 }
@@ -177,11 +175,33 @@ a {
     color: #FFDBC7
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 label {
     display: block;
     cursor: pointer;
-    background-image: url(../imgs/dots.png) no-repeat left center;
-    
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+input#dropdown {
+    display: none;
+}
+
+input:checked ~ label {
+    color: #000000;
+}
+
+input:checked ~ .footerInfo {
+    max-height: 100%;
+}
+
+input:checked ~ .footerMenu {
+    max-width: 100%;
 }
 
 footer:hover {
