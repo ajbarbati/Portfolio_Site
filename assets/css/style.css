@@ -84,6 +84,8 @@ main {
     background-color: #8E5534;
     border-radius: 15px;
     padding: 30px;
+    width: 100%;
+    height: auto;
     display: flex;
     place-items: center;
     justify-content: center;
@@ -96,10 +98,17 @@ main {
     padding: 20px 0px;
 }
 
+.card > a {
+    width: 100%; 
+    display: block;
+    text-decoration: none;
+    color: #FFDBC7;
+}
+
 img {
     border: 2px #69182B solid;
     border-radius: 25px;
-    width: 99%;
+    width: 100%;
 }
 /* ---- MAIN ---- */
 
@@ -204,7 +213,7 @@ li {
     color: #8E5534
 }
 
-a {
+li > a {
     display: block;
     text-decoration: none;
     color: #FFDBC7;
