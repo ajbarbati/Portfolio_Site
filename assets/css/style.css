@@ -22,7 +22,7 @@ article {
     height: auto;
     grid-template-areas: 
     "header header header header header"
-    ". leftBtn main rightBtn .";
+    "leftBtn main main main rightBtn";
     grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     font-family: 'Lato', sans-serif;
