@@ -1,5 +1,5 @@
 
-//Slide slider
+//Slider that cycles through projects
 var slideIndex = 1
 showDivs(slideIndex)
 
@@ -9,18 +9,28 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i
-  var x = document.getElementsByClassName("card")
+  var card = document.getElementsByClassName("card")
   
-  if (n > x.length) {
+  if (n > card.length) {
       slideIndex = 1
     }
   if (n < 1) {
-      slideIndex = x.length
+      slideIndex = card.length
     } 
   
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"
+  for (i = 0; i < card.length; i++) {
+    card[i].style.display = "none"
   }
 
-  x[slideIndex-1].style.display = "block"
+  card[slideIndex-1].style.display = "block"
 }
+
+// Jquery to edit css on scroll
+
+var $rb = $('.rightBtn')
+var $win = $(window)
+
+$win.on('scroll', function () {
+  var top = $win.scrollTop()
+  $rb.css('transform', 'rotate(' + top + 'deg)')
+})
