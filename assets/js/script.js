@@ -27,10 +27,10 @@ function showDivs(n) {
 
 // Jquery to edit css on scroll
 
-var $rb = $('.rightBtn')
-var $win = $(window)
+// var $rb = $('.rightBtn')
+// var $win = $(window)
 
-$win.on('scroll', function () {
-  var top = $win.scrollTop()
-  $rb.css('transform', 'rotate(' + top + 'deg)')
-})
+// $win.on('scroll', function () {
+//   var top = $win.scrollTop()
+//   $rb.css('transform', 'rotate(' + top + 'deg)')
+// })
