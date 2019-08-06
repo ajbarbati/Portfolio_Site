@@ -1,33 +1,31 @@
 /* I will be using grid hopefully it works with horizontal scrolling */
 body {
-    
+    width: 100%;
+    height: 100%;
 }
 
-article {
-    display: grid;
-    grid-gap: 1em;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    height: auto;
-    grid-template-areas: 
-    "header header header header header"
-    "leftBtn main main main rightBtn";
-    grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.container {
+    display: flex;
+    flex-flow: row wrap;   
 }
+
+/* .container > * {
+    padding: 10px;
+    flex: 1 100%;
+  } */
+
+article {
+    width: 100%;
+    height: 1080px;
+    margin: 20px;
+    background-color: #40e699;
+    border-radius: 95px;
+}
+
+
 
 /* ---- HEADER ---- */
 header { 
-    grid-area: header;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-header > p {
 }
 
 h1 {
@@ -36,16 +34,11 @@ h1 {
 h2 {
 }
 
-header > p {
-}
 /* ---- HEADER ---- */
 
 
 /* ---- MAIN ---- */
 main {
-    grid-area: main;
-    place-self: center;
-    place-items: center;
 }
 
 /* ---- MAIN ---- */
@@ -59,3 +52,17 @@ main {
 footer {
 }
 /* ---- FOOTER ---- */
+
+/* ---- MEDIA QUERIES ---- */
+/* @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  } */
+/* ---- MEDIA QUERIES ---- */
