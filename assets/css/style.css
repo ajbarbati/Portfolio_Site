@@ -1,10 +1,10 @@
 
 body {
-    background-color: rgb(223, 236, 255); 
+    background-image: linear-gradient(64deg, rgb(206, 218, 240), rgb(134, 171, 240)); 
     height: 100vh;
     width: 100%;
     color: rgb(104, 52, 52);
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 16px;
 }
 
@@ -18,7 +18,7 @@ article {
 
 .intro,
 .mainContent,
-.infoSection {
+.projectSection {
     flex: 1 1 400px;
     margin: 10px;
 }
@@ -40,16 +40,29 @@ h1, h2 {
     font-family: 'Libre Caslon Text', serif;
 }
 h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 25px; 
 }
 h2 {
-    font-size: 2em;
-    margin-bottom: 50px;
+    font-size: 1.75em;
+    margin-bottom: 25px;
     font-weight: 200;
 }
+h3 {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
 p {
-    line-height: 30px;
+    line-height: 25px;
+}
+
+.contactInfo {
+    text-align: left;
+}
+b {
+    font-size: 1.1em;
+    margin: 20px 55px 20px 0px;
 }
 
 .links {
@@ -70,16 +83,25 @@ a {
 
 
 /* ---- MAIN-CONTENT---- */
-.mainContainer {
+.viewMaster {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    justify-content: center;
+    align-content: center;
 }
 
-img {
-    width: 70%;
+.vmImg {
+    width: 100%;
     height: auto;
+}
+
+.lever:hover {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 /* ---- MAIN-CONTENT ---- */
 
@@ -91,12 +113,16 @@ img {
     justify-content: space-between;
     height: 100%;
 }
-.contactInfo {
-    text-align: left;
+
+.projectImage {
+    justify-items: center;
+    align-items: center;
 }
-b {
-    font-size: 1.1em;
-    margin: 20px 55px 20px 0px;
+
+.pjImg {
+    margin-bottom: 15px;
+    width: 75%;
+    height: auto;
 }
 /* ---- INFO-SECTION ---- */
 
