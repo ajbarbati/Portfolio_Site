@@ -1,10 +1,4 @@
-
-
-
-
-
-
-  //Slide slider
+ //Slide slider
 var slideIndex = 1
 var slideIndex2 = 1
 showDivs(slideIndex)
@@ -47,3 +41,13 @@ function showDivs(n) {
   
     x[slideIndex2-1].style.display = "block"
   } 
+
+  // svg style editor
+var allStates = $("svg.us > *");
+
+allStates.on("click", function() {
+  
+  allStates.removeClass("on");
+  $(this).addClass("on");
+  
+});
