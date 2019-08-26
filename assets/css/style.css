@@ -8,14 +8,15 @@ a {
 }
 
 html {
-    width: 100%;
-    color: #0E2629;
     height: 100%;
-    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    color: #333333;
+    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    background: #F5FFE8;
 }
 
 body {
@@ -23,30 +24,30 @@ body {
     text-align: center;
     height: 100%;
     width: 90%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("assets/imgs/background-art.png");
+    
 }
 /* - - - - HEADER - */
 
-h1 { 
-    font-size: 9em;
-    font-family: 'Vollkorn', serif;
+.name {
+    width: 100%;
+    height: auto;
 }
 /* - - - - HEADER - */
 
 
 /* - - - - MAIN-TEXT - */
 .mainText {
-    background: #0E2629;
-    border: 1px #0E2629a1 solid;
-    border-radius: 30px;
-    color: #e4cbcb;
+    background: #DB7A42;
+    border-radius: 0px 50px 50px 0px;
+    color: #f3e6e6;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
+    margin-left: -90px;
+    padding-left: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column; 
+
 }
 
 p {
@@ -59,20 +60,20 @@ p {
 
 /* - - - - TITLE-LINKS - */
 .titleLinks {
-    text-align: left;
-    color: #D15C39;
+    color: #333;
+    width: 100%;
+    height: 100%;
 }
 
 h2 {
     font-size: 1.75em;
-    margin: 0px 0px 30px;
-    font-family: 'Raleway', sans-serif;
+    margin-left: 30px;
+    float: left;
 }
 
 article {
     height: 100%;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -90,11 +91,12 @@ a {
     border-radius: 30px;
     background-color: #BCE3BB;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    background-image: linear-gradient( 20deg, rgba(45, 107, 99, 0.205),rgb(243, 252, 243));
+    background: rgba(0, 0, 0, 0) url("../imgs/circles-light.png") repeat scroll 0% 0%;
     font-size: .8em;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .card {
@@ -121,11 +123,11 @@ a {
 
 /* - - - - FOOTER - */
 footer {
-    width: 100%;
+    width: max-content;
     height: 100%;
-    background-color: rgba(209, 92, 57, 0.521);
+    background-color: #A2D296;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    border-radius: 30px;
+    border-radius: 30px 30px 0px 0px;
 }
 
 h3 {
@@ -135,29 +137,39 @@ h3 {
 }
 
 .links {
-    float: right;
     height: auto;
     width: auto;
     font-size: 20px;
-    margin: 30px;
+    margin: 40px;
 }
 
 .link {
     color: inherit;
     transition: .18s ease-in;
-    border-bottom: 2px #B4BD56 solid;
+    border-bottom: 2px rgb(208, 219, 193) solid;
     border-radius: 7%;
     margin: 0px 15px;
     padding-bottom: 5px;
 }
 
 .link:hover {
-    border-bottom: 2px #B4BD56 solid;
+    border-bottom: 2px rgb(240, 231, 231) solid;
     border-radius: 15%;
     padding-bottom: 10px;
 }
 
+h4 {
+    color: rgba(51, 51, 51, 0.322);
+    padding: 0px 30px 20px;
+}
 
+.phone {
+    float: left;
+}
+
+.email {
+    float: right;
+}
 /* - - - - FOOTER - */
 
 
