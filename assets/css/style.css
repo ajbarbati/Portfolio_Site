@@ -9,14 +9,15 @@ a {
 
 html {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     color: #333333;
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background: #F5FFE8;
+    background-color: #effff7;
 }
 
 body {
@@ -37,23 +38,23 @@ body {
 
 /* - - - - MAIN-TEXT - */
 .mainText {
-    background: #DB7A42;
-    border-radius: 0px 50px 50px 0px;
-    color: #f3e6e6;
+    /* border-radius: 0px 3.5em 3.5em 0px; */
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    margin-left: -90px;
-    padding-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column; 
-
+    position: relative;
+    background: linear-gradient(30deg,  #F5A64D 55%,#3F9BB2 25%);
+    height: 90%;
+    width: 97%;
+    padding: 1rem;
 }
 
-p {
-    font-size: 1.1em;
-    margin: 30px;
+.pText {
+    /* border-radius: 0px 3em 3em 0px; */
+    font-size: 1em;
     line-height: 1.8em;
+    background: #F5FFE8;
+    color: #333;
+    padding: 3rem;
+    height: 100%;
 }
 /* - - - - MAIN-TEXT - */
 
@@ -66,9 +67,10 @@ p {
 }
 
 h2 {
-    font-size: 1.75em;
-    margin-left: 30px;
+    font-size: 2.5em;
     float: left;
+    margin: 1rem;
+    color: #333;
 }
 
 article {
@@ -87,45 +89,76 @@ a {
 
 
 /* - - - - DIVS - */
-.box {
-    border-radius: 30px;
-    background-color: #BCE3BB;
+.card {
+    position: relative;
+    border-radius: .5rem;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    background: rgba(0, 0, 0, 0) url("../imgs/circles-light.png") repeat scroll 0% 0%;
     font-size: .8em;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    height: 80%;
+    width: 90%;
+    padding: 1rem;
 }
 
-.card {
-    height: 150px;
-    width: 150px;
+.a {
+    background-color: rgb(83, 231, 128);
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 
-.projectGif {
-    width: 100%;
+.b {
+    background-color: rgb(112, 236, 149);
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+.c {
+    background-color:rgb(162, 231, 183);
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+.d {
+    background-color: rgb(216, 231, 220);
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+.innerTop {
     height: 100%;
-    margin: 15px;
+    width: 100%;
 }
 
-.cardText {
-    margin-top: 30px;
-    margin-bottom: -10px;
-    padding: 10px;
-    background-color: rgba(243, 252, 243, 0.075);
-    border-radius: 30px;
-    padding: 20px;
+.projGif {
+    margin-top: 1rem;
+    width: 80%;
+    height: auto;
+    border-radius: 3em;
+    box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
+
+}
+
+.innerText {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background: #333;
+    border-radius: 0rem 0rem .5rem .5rem;
+}
+
+.text {
+    color: #F5FFE8;
+    font-size: 1.5em;
+    line-height: 1.3em;   
+    padding: 1em;
 }
 /* - - - - DIVS - */
 
 
 /* - - - - FOOTER - */
 footer {
-    width: max-content;
+    width: 100%;
     height: 100%;
-    background-color: #A2D296;
+    background-color: #F5A64D;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
     border-radius: 30px 30px 0px 0px;
 }
@@ -140,7 +173,7 @@ h3 {
     height: auto;
     width: auto;
     font-size: 20px;
-    margin: 40px;
+    margin: 1em;
 }
 
 .link {
@@ -160,7 +193,7 @@ h3 {
 
 h4 {
     color: rgba(51, 51, 51, 0.322);
-    padding: 0px 30px 20px;
+    padding: 50px 30px 0px;
 }
 
 .phone {
