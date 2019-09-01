@@ -8,7 +8,7 @@ a {
 }
 
 html {
-    height: 100%;
+    height: 2000px;
     width: 100vw;
     color: #333333;
     font-family: 'Lexend Deca', sans-serif;
@@ -25,12 +25,11 @@ body {
     text-align: center;
     height: 100%;
     width: 90%;
-    
 }
 /* - - - - HEADER - */
 
 .name {
-    width: 100%;
+    width: 55%;
     height: auto;
 }
 /* - - - - HEADER - */
@@ -49,8 +48,8 @@ body {
 
 .pText {
     /* border-radius: 0px 3em 3em 0px; */
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 1.5em;
+    line-height: 2.5em;
     background: #F5FFE8;
     color: #333;
     padding: 3rem;
@@ -68,7 +67,6 @@ body {
 
 h2 {
     font-size: 2.5em;
-    float: left;
     margin: 1rem;
     color: #333;
 }
@@ -103,12 +101,12 @@ a {
 }
 
 .a {
-    background-color: rgb(83, 231, 128);
+    background-color: rgb(162, 231, 183);
     background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 
 .b {
-    background-color: rgb(112, 236, 149);
+    background-color: rgb(162, 231, 183);
     background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 
@@ -118,7 +116,7 @@ a {
 }
 
 .d {
-    background-color: rgb(216, 231, 220);
+    background-color: rgb(162, 231, 183);
     background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 
@@ -129,7 +127,7 @@ a {
 
 .projGif {
     margin-top: 1rem;
-    width: 80%;
+    width: 55%;
     height: auto;
     border-radius: 3em;
     box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
@@ -148,7 +146,7 @@ a {
 .text {
     color: #F5FFE8;
     font-size: 1.5em;
-    line-height: 1.3em;   
+    line-height: 1.5em;   
     padding: 1em;
 }
 /* - - - - DIVS - */
@@ -172,8 +170,8 @@ h3 {
 .links {
     height: auto;
     width: auto;
-    font-size: 20px;
-    margin: 1em;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .link {
@@ -193,7 +191,8 @@ h3 {
 
 h4 {
     color: rgba(51, 51, 51, 0.322);
-    padding: 50px 30px 0px;
+    padding: 50px 10px 0px;
+    font-size: 2rem;
 }
 
 .phone {
@@ -207,19 +206,43 @@ h4 {
 
 
 /* ---- MEDIA QUERIES ---- */
-@media only screen and  (max-width: 1120px) {
-    h1 {
-        font-size: 7em;
+@media only screen and  (max-width: 1200px) {
+    .name {
+        width: 100%;
     }
+
+    .pText {
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+
+    .text {
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+
+    .projGif {
+        width: 75%;
+    }
+
+    .links {
+        font-size: 1.5rem;
+    }
+    
+    .contact h4 {
+        font-size: 1.5rem;
+    }
+    ]
 }
 
-@media only screen and  (max-width: 800px) {
-    
+@media only screen and  (max-width: 840px) {
+    .body
     .wrap {
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
+        height: 100%;
     }
 
     h1 { 
@@ -227,21 +250,75 @@ h4 {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     h3 {
         font-size: 1.2em;
     }
     
+    .mainText {
+        font-size: 1em;
+    }
+
     .titleLinks {
         text-align: center;
+    }
+
+    .mainText, .card {
+        margin: 40px 0px 0px 0px 
+    }
+
+    .projGif {
+        width: 27%;
+        margin: 1rem;
+        float: right;
+    }
+
+    .card {
+        height: 1200px;
+        font-size: .75em;
+    }
+
+    footer{
+        margin-top: 2rem;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .links a {
+        margin-top: 1.1em;
+        font-size: 1.4em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+    
+    .contact h4 {
+        font-size: 1.1em;
+    }
+
+    .pText {
+        font-size: 1em;
+        
     }
 }
 
 @media only screen and  (max-width: 555px) {
-    h1 {
-        font-size: 4.5em;
+    .contact h4 {
+        font-size: .9em;
     }
+    h4 {
+         padding: 10px 5px 0px;
+    }
+   
 }
 /* ---- MEDIA QUERIES ---- */
+
+
+
