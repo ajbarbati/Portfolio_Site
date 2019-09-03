@@ -48,7 +48,7 @@ body {
 
 .pText {
     /* border-radius: 0px 3em 3em 0px; */
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 2.5em;
     background: #F5FFE8;
     color: #333;
@@ -232,7 +232,11 @@ h4 {
     .contact h4 {
         font-size: 1.5rem;
     }
-    ]
+
+    .mainText {
+        font-size: 1em;
+    }
+
 }
 
 @media only screen and  (max-width: 840px) {
