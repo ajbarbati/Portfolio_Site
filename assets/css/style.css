@@ -2,145 +2,109 @@
 @import url("3x6-grid.css");
 
 a {
-    margin: 10px;
     text-decoration: none;
     color: inherit;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    color: #7bffc4;
 }
 
 html {
-    height: 2000px;
-    width: 100vw;
-    color: #333333;
+    height: auto;
+    width: 100%;
+    color: #2c2c2c;
+    background-color: #effff7;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-    background-color: #effff7;
+    justify-content: center;
+    
 }
 
 body {
     font-size: 16px;
-    text-align: center;
     height: 100%;
-    width: 90%;
+    width: 100%;
 }
+
 /* - - - - HEADER - */
+header {
+    background-color: #e3fff1;
+}
 
 .name {
-    width: 55%;
+    width: 30%;
     height: auto;
-}
-/* - - - - HEADER - */
-
-
-/* - - - - MAIN-TEXT - */
-.mainText {
-    /* border-radius: 0px 3.5em 3.5em 0px; */
-    box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    position: relative;
-    background: linear-gradient(30deg,  #F5A64D 55%,#3F9BB2 25%);
-    height: 90%;
-    width: 97%;
-    padding: 1rem;
+    float: right;
+    margin: 2rem;
 }
 
-.pText {
-    /* border-radius: 0px 3em 3em 0px; */
-    font-size: 1.2em;
-    line-height: 2.5em;
-    background: #F5FFE8;
-    color: #333;
-    padding: 3rem;
-    height: 100%;
+h1 {
+    font-size: 2.7em;
 }
-/* - - - - MAIN-TEXT - */
 
-
-/* - - - - TITLE-LINKS - */
 .titleLinks {
     color: #333;
-    width: 100%;
-    height: 100%;
+    text-align: left;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin: 1rem;
+h5 {
+    font-size: 1.5em;
+    margin: 2rem;
+}
+/* - - - - MAIN-TEXT - */
+.pText {
+    /* border-radius: 0px 3em 3em 0px; */
+    font-size: 1.1em;
+    line-height: 2.5em;
     color: #333;
 }
 
-article {
-    height: 100%;
-    width: 100%;
+ul {
+    margin-top: 50px;
 }
+/* - - - - MAIN-TEXT - */
 
-a {
-    margin: 0%;
-}
+/* - - - - HEADER - */
 
-.botLink:hover {
-   color: #0E2629;
-}
-/* - - - - TITLE-LINKS - */
 
 
 /* - - - - DIVS - */
 .card {
-    position: relative;
-    border-radius: .5rem;
-    box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    font-size: .8em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 80%;
-    width: 90%;
-    padding: 1rem;
-}
-
-.a {
-    background-color: rgb(162, 231, 183);
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-}
-
-.b {
-    background-color: rgb(162, 231, 183);
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-}
-
-.c {
-    background-color:rgb(162, 231, 183);
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-}
-
-.d {
-    background-color: rgb(162, 231, 183);
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-}
-
-.innerTop {
-    height: 100%;
     width: 100%;
-}
-
-.projGif {
-    margin-top: 1rem;
-    width: 55%;
     height: auto;
-    border-radius: 3em;
-    box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-
+    background: #f6fffb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.innerText {
-    position: absolute;
-    bottom: 0;
-    height: 40%;
+.inner {
     width: 100%;
-    background: #333;
-    border-radius: 0rem 0rem .5rem .5rem;
+    height: 100%;
+    background: #cefae4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj {
+    width: 90%;
+    height: auto;
+
 }
 
 .text {
@@ -149,6 +113,12 @@ a {
     line-height: 1.5em;   
     padding: 1em;
 }
+
+h2 {
+    font-size: 2.5em;
+    margin: 1rem;
+    color: #333;
+}
 /* - - - - DIVS - */
 
 
@@ -156,91 +126,41 @@ a {
 footer {
     width: 100%;
     height: 100%;
-    background-color: #F5A64D;
-    box-shadow: 7px -4px 9px -4px rgba(0,0,0,0.75);
-    border-radius: 30px 30px 0px 0px;
-}
-
-h3 {
-    font-size: 1.5em;
-    float: left;
-    margin: 30px;
+    background-color: #e3fff1;
 }
 
 .links {
-    height: auto;
-    width: auto;
-    font-size: 2rem;
-    margin-top: 1rem;
+    margin: 6rem;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: space-around; 
 }
 
-.link {
-    color: inherit;
-    transition: .18s ease-in;
-    border-bottom: 2px rgb(208, 219, 193) solid;
-    border-radius: 7%;
-    margin: 0px 15px;
-    padding-bottom: 5px;
+footer a {
+    font-size: 1.25em;
 }
 
-.link:hover {
-    border-bottom: 2px rgb(240, 231, 231) solid;
-    border-radius: 15%;
-    padding-bottom: 10px;
+h3 {
+    font-size: 2em;
+    margin: 2em;
 }
 
 h4 {
     color: rgba(51, 51, 51, 0.322);
-    padding: 50px 10px 0px;
-    font-size: 2rem;
-}
-
-.phone {
-    float: left;
-}
-
-.email {
-    float: right;
+    font-size: 1.25em;
 }
 /* - - - - FOOTER - */
 
 
 /* ---- MEDIA QUERIES ---- */
 @media only screen and  (max-width: 1200px) {
-    .name {
-        width: 100%;
-    }
-
-    .pText {
-        font-size: 1.2em;
-        line-height: 2em;
-    }
-
-    .text {
-        font-size: 1.3em;
-        line-height: 1.3em;
-    }
-
-    .projGif {
-        width: 75%;
-    }
-
-    .links {
-        font-size: 1.5rem;
-    }
     
-    .contact h4 {
-        font-size: 1.5rem;
-    }
-
-    .mainText {
-        font-size: 1em;
-    }
 
 }
 
 @media only screen and  (max-width: 840px) {
-    .body
+    /* .body
     .wrap {
         display: flex;
         align-items: center;
@@ -249,80 +169,13 @@ h4 {
         height: 100%;
     }
 
-    h1 { 
-        font-size: 6em;
-    }
+     */
 
-    h2 {
-        font-size: 3em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
     
-    .mainText {
-        font-size: 1em;
-    }
-
-    .titleLinks {
-        text-align: center;
-    }
-
-    .mainText, .card {
-        margin: 40px 0px 0px 0px 
-    }
-
-    .projGif {
-        width: 27%;
-        margin: 1rem;
-        float: right;
-    }
-
-    .card {
-        height: 1200px;
-        font-size: .75em;
-    }
-
-    footer{
-        margin-top: 2rem;
-    }
-
-    .links {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .links a {
-        margin-top: 1.1em;
-        font-size: 1.4em;
-    }
-
-    .text {
-        font-size: 1em;
-    }
-    
-    .contact h4 {
-        font-size: 1.1em;
-    }
-
-    .pText {
-        font-size: 1em;
-        
-    }
 }
 
 @media only screen and  (max-width: 555px) {
-    .contact h4 {
-        font-size: .9em;
-    }
-    h4 {
-         padding: 10px 5px 0px;
-    }
-   h2 {
-       font-size: 2rem;
-   }
+    
 }
 /* ---- MEDIA QUERIES ---- */
 
