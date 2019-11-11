@@ -15,7 +15,7 @@ html {
     height: auto;
     width: 100%;
     color: #2c2c2c;
-    background-color: #effff7;
+    background-color: #e9fbff;
     font-family: 'Lexend Deca', sans-serif;
     display: flex;
     flex-direction: column;
@@ -32,11 +32,11 @@ body {
 
 /* - - - - HEADER - */
 header {
-    background-color: #e3fff1;
+    background-color: #a4dce9;
 }
 
 .name {
-    width: 30%;
+    width: 50%;
     height: auto;
     float: right;
     margin: 2rem;
@@ -46,14 +46,19 @@ h1 {
     font-size: 2.7em;
 }
 
+.titleName {
+    text-align: center;
+    margin-top: 5rem;
+}
+
 .titleLinks {
     color: #333;
     text-align: left;
 }
 
 h5 {
-    font-size: 1.5em;
-    margin: 2rem;
+    font-size: 2.5em;
+    margin: 2.5rem;
 }
 /* - - - - MAIN-TEXT - */
 .pText {
@@ -76,7 +81,7 @@ ul {
 .card {
     width: 100%;
     height: auto;
-    background: #f6fffb;
+    background: #70cee2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +91,7 @@ ul {
 .inner {
     width: 100%;
     height: 100%;
-    background: #cefae4; 
+    background: #70cee2; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +123,7 @@ h2 {
     font-size: 2.5em;
     margin: 1rem;
     color: #333;
+    text-align: center;
 }
 /* - - - - DIVS - */
 
@@ -126,7 +132,7 @@ h2 {
 footer {
     width: 100%;
     height: 100%;
-    background-color: #e3fff1;
+    background-color: #f8f2c1;
 }
 
 .links {
@@ -161,13 +167,23 @@ h4 {
     .link {
         margin-bottom: 1.5rem;
     }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    
 }
 
 @media only screen and  (max-width: 840px) {
    body {
         font-size: 10px;
     }
-
+    h5 {
+        margin: 1.75rem;
+        font-size: 1.5rem
+    }
 }
 
 @media only screen and  (max-width: 555px) {
@@ -176,8 +192,16 @@ h4 {
     h3 {
         margin: 1rem;
     }
+    h5 {
+        font-size: 1rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
     .links {
         margin: 2rem;
+    }
+    ul {
+        margin-top: 25px;
     }
 }
 /* ---- MEDIA QUERIES ---- */
