@@ -1,6 +1,6 @@
 # Portfolio_Site
 
-## Outline
+### Summary 
     
     - A site displaying a selection of my work in a simple stylish manner.
 
