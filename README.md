@@ -14,3 +14,5 @@ Link -  https://ajbarbati.github.io/Portfolio_Site/
         - Contact Section
         
 ### Screen Shots
+
+![Portfolio Screenshot](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1")
