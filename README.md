@@ -15,4 +15,4 @@ Link -  https://ajbarbati.github.io/Portfolio_Site/
         
 ### Screen Shots
 
-![Portfolio Screenshot](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1")
+![Portfolio Screenshot](https://github.com/ajbarbati/Portfolio_Site/blob/master/assets/imgs/Untitled.png "Screenshot 1")
