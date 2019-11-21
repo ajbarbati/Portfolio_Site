@@ -6,7 +6,7 @@ Link -  https://ajbarbati.github.io/Portfolio_Site/
     
     - A site displaying a selection of my work in a simple stylish manner.
 
-### Organized 
+### Outline
 
         - Header
         - Projects
