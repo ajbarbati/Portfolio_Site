@@ -1,0 +1,6 @@
+.grid {
+  display: grid;  
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: 5% auto 5%;
+  place-items: center;
+}
