@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './CSS/index.css';
 import './CSS/Footer.css';
+import './CSS/MediaQueries.css';
 import MainPage from './Main/MainPage.js';
 import * as serviceWorker from './serviceWorker';
 

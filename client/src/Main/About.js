@@ -85,11 +85,13 @@ class About extends Component {
     return (
       <div className="main About">
         <article>
-          <img
+          <div className="aImgContainer">
+            <img
             className="aboutImage"
             src="https://res.cloudinary.com/dz3p8xcr8/image/upload/v1594576380/Portfolio/5430315134833289010_oyfhie.jpg"
             alt="Alex Barbati | Brown hair, beard, and glasses"
-          ></img>
+            ></img>
+          </div>
           <div className="intro">
             <h1>Hello,</h1>
             <p>
@@ -160,6 +162,7 @@ class About extends Component {
             </div>
 
             <table className="otherExperience">
+              <caption>Additional Experience</caption>
               <tr>
                 <th>Company</th>
                 <th>Title</th>
