@@ -2,8 +2,10 @@
     --light-bg: #20243d;
     --bg: #1b1f3a;
     --card-1: #53354a;
+    --card-1-dark: #301f2b;
     --card-2: #a64942;
     --highlight: #d86d4d;
+
 
     --white: #FCF7F8;
     --black: #101320;
@@ -14,8 +16,6 @@
 }
 
 html {
-    
-    height: 9312.83px ;
 
     margin: 0;
     padding: 0;
@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, caption {
 body {
     background-color: var(--light-bg);
     color: var(--white);
+    height: 100%;
   }
 
   .MainPage {
@@ -118,9 +119,10 @@ header {
                 grid-column: 3;
                 justify-self: end;
 
-                margin: .75em .75em;
+                margin: 2em .75em;
                 border-radius: 35px;
                 border: .25rem #301f2b solid;
+                outline: none;
                 height: 105px;
                 width: 105px;
                 padding: 1em;
@@ -139,13 +141,16 @@ header {
                     width: 100%;
                 }
 
-            .profileImage {
-                height: 100px;
-                width: 100px;
-                border: .25rem var(--white) solid;
-                border-radius: 40px;
-                margin: .75em .75em;
-            }
+                .contactBtn:hover {
+                    box-shadow: 1px 1px 20px #53354a86;
+                }
+
+                .contactBtn:active {
+                    background-color: var(--card-1-dark);
+                    border: .25rem var(--card-1) solid;
+                    height: 108px;
+                    width: 108px;
+                }
 
 .content .main {
     display: grid;

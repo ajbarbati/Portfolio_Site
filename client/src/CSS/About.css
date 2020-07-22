@@ -1,10 +1,10 @@
 .aboutImage {
     max-width: 100%;
+    min-height: 100%;
 }
 
 .main.About article {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
     grid-template-rows: auto;
     grid-auto-flow: dense;
     grid-gap: 3em;
@@ -50,7 +50,7 @@
         margin-top: 7%;
         margin-bottom: 12%;
         display: grid;
-        align-items: center;
+        place-items: center;
     }
         .tldr h3 {
             margin-top: 0;
@@ -63,43 +63,69 @@
             margin-top: 0em;
             margin-bottom: 0;
             margin-left: 0em;
+            width: 90%;
         }
 
     .technicalSkills {
         grid-row: 3;
         grid-column: 1;
 
-        
+        display: grid;
+        grid-template-rows: 5% 5% auto 5% auto 5%;
     }
 
-        .technicalSkills h5 {
-            font-style: italic;
-            margin-left: 1.5em;
+        .technicalSkills p {
+            display: grid;
+            grid-template-columns:  1fr 1fr;
         }
 
-        .technicalSkills p {
-            margin-left: 2.5em;
-            font-size: 1.1em;
+        .technicalSkills h3 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .technicalSkills h5.a {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .technicalSkills p.a {
+            grid-row: 3;
+            grid-column: 1;
+        }
+        .technicalSkills h5.b {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        .technicalSkills p.b {
+            grid-row: 5;
+            grid-column: 1;
         }
 
         .technicalSkills span {
+            font-weight: 800;
             display: block;
-            padding: 2em;
-            padding: .3em;
+            text-align: center;
+            padding: .4em .9em;
             margin: 1em;
             line-height: 1.9;
-            width: 70%;
-            background-color: var(--card-1);
+            font-family: 'Biryani', sans-serif !important; 
+            border-bottom: solid 1em var(--card-1);
+            background-color: #1b1f3a;
+            border-radius: 15px;
         }
 
-        .technicalSkills span::before {
-            content: ">";
+        .technicalSkills span:hover {
+            color: var(--highlight);
+            font-style: italic;
+            cursor: pointer;
+        }
+
+        .technicalSkills span::first-letter {
             font-weight: 800;
-            margin-left: -5px;
-            padding: .6em .9em;
-            font-size: 1.2em;
-            background-color: var(--highlight);
-            margin-right: .75em;
+            color: var(--highlight);
+            font-size: 2em !important; 
         }
 
     .experience {
@@ -114,10 +140,69 @@
             grid-row: 1;
             grid-column: 1 / 3; 
         }
-        .experience div {
+        .jobs {
             grid-row: 2;
             grid-column: 1 / 3; 
         }
+
+            .jobInner {
+                display: grid;
+                grid-template-columns: 33% 1fr;
+                margin-bottom: 2.5em;
+                border-left: solid 1em var(--card-2);
+            }
+
+                .jobTitleDiv {
+                    grid-row: 1 / 3;
+                    grid-column: 1;
+
+                    padding: 1em;
+                }
+
+                    .job.Company {
+                        color: var(--white);
+                    }
+
+                    .job::before {
+                        content: ">";
+                        color: var(--card-1-dark);
+                        font-size: 2em;
+                        margin:0 .5em 0 0em;
+                    }
+
+
+                .jobDescription {
+                    grid-row: 1 / 3;
+                    grid-column: 2;
+
+                    align-self: center;
+                    justify-self: center;
+                    line-height: 2;
+                    width: 75%;
+                    margin-bottom: 2em;
+                }
+
+                    .jobDescription h5 {
+                        text-align: center;
+                    }
+
+                .jobProjects {
+                    grid-row: 3 / 5;
+                    grid-column: 1 / 3;
+
+                    align-self: center;
+                    justify-self: center;
+                    width: 75%;
+                    margin-bottom: 2em;
+                }
+
+                    .jobProjects h5 {
+                        text-align: center;
+                    }
+
+
+
+
         .otherExperience {
             grid-row: 3;
             grid-column: 1 / 3; 
@@ -135,7 +220,9 @@
         }
 
         tr, td {
+            font-size: .95em;
             padding: .75em;
+            font-family: 'Biryani', sans-serif !important;
         }
 
     .education {

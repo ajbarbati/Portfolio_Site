@@ -14,13 +14,10 @@ class ProjectList extends Component {
   render() {
   return (
     <div className="ProjectList">
-      <article>
-        <h1>A List of all my projects</h1>
-        <p>Here's a project there's a projects</p>
-      </article>
+      <h2 className="projectTitle">Projects</h2>
       <div className='projects'>
         <ProjectCard/>
-    </div>
+      </div>
   </div>
   )
   }

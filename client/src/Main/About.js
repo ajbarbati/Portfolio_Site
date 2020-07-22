@@ -27,7 +27,7 @@ class About extends Component {
         "Photoshop",
         "Illustrator",
         "XD",
-        "Microsoft Office Suite."
+        "MS Office Suite."
       ],
       resume: [
         {
@@ -61,27 +61,25 @@ class About extends Component {
         },
         {
           Company: "Self Employed",
-          Title: "",
-          Time: "",
-          Projects: [
-            {
-              title: "",
-              link: "",
-              details: ""
-            },
-            {
-              title: "",
-              link: "",
-              details: ""
-            }
-          ]
+          Title: "Freelance Web Developer",
+          Time: "2014 - Present",
+          Location: "Cleveland-Akron Area",
+          Description: "Created many Websites and projects for clients, friends, and family Worked productive and positive to design, code, test, report, and debug operations. Successfully identified, diagnosed, and fixed website problems, including broken links, typographical errors, and formatting issues. Worked to assess competing websites in regards to content, look, and feel. Consistently learning the top methods and frameworks."
         }
       ]
       
     }
+  
+  
+    
+
+  
   }
 
   render() {
+   
+
+   
     return (
       <div className="main About">
         <article>
@@ -122,16 +120,16 @@ class About extends Component {
           </div>
           <div className="technicalSkills">
             <h3>TECHNICAL SKILLS</h3>
-            <h5>Languages & Frameworks</h5>
-            <p>
+            <h5 className="a">Languages & Frameworks</h5>
+            <p className="a">
               {this.state.landf.map((tech, key) => (
                 <span key={key}>
                   {tech}
                 </span>
               ))}
             </p>
-            <h5>Software</h5>
-            <p>
+            <h5 className="b">Software</h5>
+            <p className="b">
             {this.state.soft.map((tech, key) => (
                 <span key={key}>
                   {tech}
@@ -141,16 +139,27 @@ class About extends Component {
           </div>
           <div className="experience">
             <h3>EXPERIENCE</h3>
-            <div>
+            <div className="jobs"> 
             {this.state.resume.map((job, key) => (
-                <div key={key}>
-                  <h4>{job.Company}</h4>
-                  <h5>{job.Title}</h5>
-                  <h5>{job.Time}</h5>
-                  <h5>{job.Location}</h5>
-                  <p>{job.Description}</p>
+                <div key={key} className="jobInner">
+                  <div className="jobTitleDiv">
+                    <h4 className="job Company">{job.Company}</h4>
+                    <h4 className="job Title">{job.Title}</h4>
+                    <h5 className="job Time">{job.Time}</h5>
+                    <h5 className="job Location">{job.Location}</h5>
+                  </div>                  
+                  <div className="jobDescription">
+                    <h5>Summary</h5>
+                    {job.Description}
+                  </div>
                   <div className="jobProjects">
-                      {job.Projects.map((proj, key) => (  
+                      {job.Projects === undefined ? null : 
+                      <h5>
+                        Projects
+                      </h5>
+                      
+                      }
+                      {job.Projects === undefined ? null : job.Projects.map((proj, key) => (  
                         <div>
                           <h6><a href={proj.link}>{proj.title}</a></h6>
                           <p>{proj.details}</p>
@@ -160,8 +169,8 @@ class About extends Component {
                 </div>
               ))}
             </div>
-
-            <table className="otherExperience">
+            <div className="otherExperience">
+              <table>
               <caption>Additional Experience</caption>
               <tr>
                 <th>Company</th>
@@ -187,7 +196,8 @@ class About extends Component {
                  <td>2015 – 2018</td>
                  <td>Fairlawn, OH</td>
                </tr>
-            </table>
+              </table>
+            </div>
           </div>
           <div className="education">
             <h3>EDUCATION</h3>

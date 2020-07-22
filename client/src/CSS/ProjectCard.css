@@ -3,7 +3,16 @@
     grid-template-columns: 1fr 80% 1fr;
     grid-template-rows: 30% auto;
     place-items: center;
+    margin-top: 5em;
 }
+
+    .projectTitle {
+        grid-row: 1;
+        grid-column: 2;
+
+        text-align: center;
+        width: 100%;
+    }
 
 .projects {
     grid-row: 2;

@@ -8,6 +8,29 @@ import Footer from "./Footer.js"
 
 
 class MainPage extends Component {
+  constructor(props) {
+    super(props) 
+
+    this.state = {
+      menu: {
+        position: "",
+        attribute: ""
+      }
+    }
+  }
+
+  
+
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+      position: props,
+      activeMarker: marker,
+      showingInfoWindow: true,
+      search: marker.name,
+    })
+    // getDistance(marker.position)
+    console.log(marker.position)
+  }
  
   render() { 
     // const container = document.querySelector('.contactForm')
@@ -27,11 +50,11 @@ class MainPage extends Component {
                   <NavLink to="/about" className="navLink">/About</NavLink>
                   <NavLink to="/projectList" className="navLink">/Project List</NavLink>
                 </div>   */}
-                <img
+                {/* <img
                   className="profileImage"
                   src="https://res.cloudinary.com/dz3p8xcr8/image/upload/v1593548339/Portfolio/profile-img_qgjufm.png"
                   alt="Alex Barbati | Brown hair, beard, and glasses"
-                ></img>
+                ></img> */}
                 <button className="contactBtn">
                     <img className="cBtnImg" src="https://res.cloudinary.com/dz3p8xcr8/image/upload/v1594917952/Portfolio/Icon_feather-menu_vkxigd.png" alt="hamburger menu"/>
                 </button>
