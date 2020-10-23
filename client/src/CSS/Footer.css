@@ -1,13 +1,15 @@
 footer {
-    background-color: #fff;
     color: var(--black);
-    min-height: 55vh;
-    width: 100%;
+    min-height: 35vh;
     display: grid;
     grid-template-columns: 65% 1fr;
     place-items: center;
     padding-top: 2.5em;
     padding-bottom: 1em;
+    border-radius: .85em .85em 0 0;
+    width: 97.5%;
+    margin: 0 auto;
+    background-color: var(--light-shade);
 }
 
 h5, a {
@@ -15,7 +17,6 @@ h5, a {
 }
 
 label, a h5 {
-    font-family: 'Biryani', sans-serif;
     color: var(--card-2);
     
     font-weight: 300;
@@ -86,7 +87,6 @@ textarea {
     font-size: 1.1em;
     border-radius: .25em;
     
-    font-family: 'Biryani', sans-serif;
     font-weight: 800;
     letter-spacing: .1em;
 }
@@ -109,7 +109,7 @@ textarea {
 
 .cLink {
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     margin-top: 2.5em;
 }
 

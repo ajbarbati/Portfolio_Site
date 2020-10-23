@@ -1,75 +1,128 @@
-.ProjectList {    
+.ProjectList {
+    background-color: var(--light-shade);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--box-shadow);
+    width: 93%;
+    margin: 0 auto;
+    padding: 2em;   
+    margin-bottom: 2em;         
+}
+.projectWrap {    
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
     grid-template-rows: 30% auto;
     place-items: center;
-    margin-top: 5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 1fr;
 }
-
-    .projectTitle {
-        grid-row: 1;
-        grid-column: 2;
-
-        text-align: center;
-        width: 100%;
+.technicalSkills {
+    grid-row: 2;
+    width: 100%;
+}
+        
+    .technicalSkills  {
+        /* display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 10vh;
+        place-items: center; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
-.projects {
-    grid-row: 2;
-    grid-column: 1 / 4;
-}
+    .technicalSkills input[type=checkbox] {
+        display: none;
+    }
+    .checkLabel {
+        font-weight: 800;
+        color: var(--light-shade);
+        display: grid;
+        place-items: center;
+        padding: .4em .9em;
+        border-radius: var(--border-radius-large);
+        cursor: pointer;
+    }
 
-.ProjectList article {
-    height: 10em;
-}
+    .checkLabel:hover {
+        box-shadow: var(--box-shadow);
+    }
+
+    /* input[type=checkbox]:checked ~ .checkLabel {
+        color: var(--dark-text);
+        background-color: rgba(116, 165, 185, 0.431);
+    } */
+
+    .clearBtn {
+        background-color: var(--light-shade);
+        border-radius: var(--border-radius-large);
+        border: .35em solid #91b2be;
+        padding: .2em .75em;
+        font-size: 1.3em;
+        cursor: pointer;
+        align-self: center;
+        height: min-content;
+        font-weight: 700;
+    }
+
 
 .projectGrid {
+    grid-row: 3;
     width: 100%;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 8em;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    border-radius: var(--border-radius-large);
 }
 
 .projectCard {
-    width: 100%;
-    /* background-color: var(--card-1); */
-    background-color: var(--bg);
-    padding: 4em 0 4em 0;
+    width: 35vw;
+    color: var(--light-shade);
+    background-color: var(--dark-accent);
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 15% 1fr 10% 10%;
     place-items: center;
+    border-radius: var(--border-radius-large);
+    font-size: 16px;
     
 }
     .projectName {
-        grid-row: 1;
-        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1;
+
+        padding: 1em;
         justify-self: start;
     }
     .projectLinks {
-        grid-row: 1;
-        grid-column: 3;
+        grid-row: 2;
+        grid-column: 2;
+
         justify-self: end;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 25% 25%;
         align-items: center;
         justify-items: end;
         width: 100%;
 
     }
     .pImgContainer {
-        grid-row: 2;
-        grid-column: 2 / 4;
+        grid-row: 1;
+        grid-column: 1 / 3;
     }
     .projectDescription {
         grid-row: 3;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
+
+        padding: 1em;
     }
     .projectTech {
         grid-row: 4;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
+
+        padding: 1em;
         justify-self: end;
     }
 
@@ -78,10 +131,10 @@
 }
 
 .pGitLink {
-    width: 5em;
+    width: 2em;
 }
 .pHostLink {
-    width: 5em;
+    width: 2em;
 }
 
 .pImgContainer {
@@ -94,12 +147,11 @@
 
 .projectImage {
     max-width: 100%;
-    margin: 1em;
     /* border: var(--card-2) solid 8px; */
+    border-radius: var(--border-radius-large) var(--border-radius-large)  0 0;
 }
 
 .techTags {
     color: var(--highlight);
     margin-right: 1.5em;
-    font-family: 'Biryani', sans-serif;   
 }
