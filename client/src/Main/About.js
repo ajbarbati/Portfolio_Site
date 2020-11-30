@@ -60,7 +60,7 @@ class About extends Component {
                 <th>Location</th>
                </tr> 
                <tr>
-                 <td>Perfect Power Wash</td>
+                 <td>farts</td>
                  <td>Call Administrator</td>
                  <td>2019 – 2020</td>
                  <td>Norton, OH</td>
