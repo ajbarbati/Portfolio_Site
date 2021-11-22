@@ -1,0 +1,51 @@
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #333248;
+    color: rgb(231, 231, 231);
+}
+.container {
+    color: #242331;
+    padding: 1em 12.5%;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+}
+    .title {
+        background-color: #F0F7EE;
+        border-radius: 15px;
+        padding: 2em    ;
+        display: grid;
+        grid-template-columns: 70% auto;
+        place-items: center baseline;
+        position: inherit;
+        box-shadow: 15px 15px 0 0 #333248;
+    }
+       
+        .header h1 {
+            margin: 0;
+            background-color: #AFDEDC;
+            padding: .25em;
+            font-size: 4.5em;
+            font-weight: 300;
+            width: max-content;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .header h2 {
+            margin: 1em 0 0 0;
+            font-weight: 400;
+            font-size: 1.1em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .title .links {
+            display: grid;
+            width: 100%;
+            height: 100%;
+        }
+    .styleDiv {
+        position: absolute;
+        background-color: #AFDEDC;
+        width: 11em;
+        height: 100vh;
+        top: 0;
+        right: 5%;
+    }
