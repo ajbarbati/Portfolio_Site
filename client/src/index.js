@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import './components/Contact/contact.css'
 import './components/Landing/landing.css'
 import './index.css'
+import 'semantic-ui-css/semantic.min.css'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
